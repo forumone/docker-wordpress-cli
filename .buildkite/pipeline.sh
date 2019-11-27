@@ -13,8 +13,8 @@ declare -A php_versions=(
   [5.6.40]="5"
   [7.0.33]=""
   [7.1.33]=""
-  [7.2.24]=""
-  [7.3.11]="7 latest"
+  [7.2.25]=""
+  [7.3.12]="7 latest"
 )
 
 # WP-CLI version to pull into images (stored here to make version bumps easier)

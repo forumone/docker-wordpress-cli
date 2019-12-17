@@ -65,7 +65,9 @@ build() {
     docker_args+=(--build-arg "$arg")
   done
 
-  docker build . "${docker_args[@]}"
+  docker build . \
+    --pull \
+    "${docker_args[@]}"
 }
 
 echo "--- Build"

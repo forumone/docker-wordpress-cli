@@ -13,13 +13,13 @@ declare -A php_versions=(
   [5.6.40]="5"
   [7.0.33]=""
   [7.1.33]=""
-  [7.2.26]=""
-  [7.3.13]=""
-  [7.4.1]="7 latest"
+  [7.2.27]=""
+  [7.3.14]=""
+  [7.4.2]="7 latest"
 )
 
 # WP-CLI version to pull into images (stored here to make version bumps easier)
-cli_version=2.3.0
+cli_version=2.4.0
 
 # Usage: create-step <version>
 # * version is a full (patch-level) version specifier

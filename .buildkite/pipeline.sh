@@ -13,9 +13,9 @@ declare -A php_versions=(
   [5.6.40]="5"
   [7.0.33]=""
   [7.1.33]=""
-  [7.2.27]=""
-  [7.3.14]=""
-  [7.4.2]="7 latest"
+  [7.2.28]=""
+  [7.3.15]=""
+  [7.4.3]="7 latest"
 )
 
 # WP-CLI version to pull into images (stored here to make version bumps easier)
@@ -34,6 +34,8 @@ create-step() {
   - label: ":docker: :php: v$minor"
     env:
       WP_CLI_VERSION: '$cli_version'
+    concurrency: 5
+    concurrency_group: "f1/docker"
     commands:
       - bash .buildkite/build.sh $version $minor ${php_versions[$version]}
 YAML

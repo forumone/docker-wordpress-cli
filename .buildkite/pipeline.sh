@@ -19,7 +19,7 @@ declare -A php_versions=(
 )
 
 # WP-CLI version to pull into images (stored here to make version bumps easier)
-cli_version=2.4.1
+cli_version=2.4.0
 
 # Usage: create-step <version>
 # * version is a full (patch-level) version specifier

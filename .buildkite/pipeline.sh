@@ -34,6 +34,8 @@ create-step() {
   - label: ":docker: :php: v$minor"
     env:
       WP_CLI_VERSION: '$cli_version'
+    concurrency: 5
+    concurrency_group: "f1/docker"
     commands:
       - bash .buildkite/build.sh $version $minor ${php_versions[$version]}
 YAML

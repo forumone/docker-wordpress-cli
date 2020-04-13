@@ -44,3 +44,5 @@ RUN set -ex \
   && rm wp.sha512
 
 WORKDIR /var/www/html
+
+ENTRYPOINT [ "/usr/local/bin/wp" ]

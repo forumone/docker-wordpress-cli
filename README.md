@@ -12,15 +12,15 @@ These are images for WP-CLI. They differ from `wordpress:cli` images in two ways
 ## PHP Versions and Tags
 
 - Currently supported by PHP:
-  - `7.3`
-  - `7.2`
-  - `7.1`
+
+  - `8.0`, `8.0-xdebug`
+  - `7.4`, `7.4-xdebug`
+  - `7.3`, `7.3-xdebug`
 
 - End-of-life for legacy projects:
-  - `7.0`
-  - `5.6`
+  - `7.2`, `7.2-xdebug`
 
-The tags `7` and `5` are available for quick testing when a specific version isn't needed.
+The tags `7` and `8` are available for quick testing when a specific version isn't needed.
 
 # License
 

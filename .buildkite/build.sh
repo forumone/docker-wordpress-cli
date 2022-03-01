@@ -81,5 +81,5 @@ build PHP_VERSION="$version" WP_CLI_VERSION="$WP_CLI_VERSION"
 
 if should-push; then
   echo "--- Push"
-  docker push "$repository"
+  docker push --all-tags "$repository"
 fi
